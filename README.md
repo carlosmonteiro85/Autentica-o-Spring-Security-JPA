@@ -12,14 +12,14 @@ Após o projeto receber o build, é iniciado o H2, que é encontrado através do
 * Password: vazio
 
 ## Utilizadouivo data.sql para injetar dados para os testes
-primeiro usuário carregado 
-.user name: user
-.password: pass
-.perfil: "User 
-segundo usuário carregado
-.user_name:admin
-.password: pass
-.perfil: "ADM
+####primeiro usuário carregado 
+* user name: user
+* password: pass
+* perfil: "User 
+####segundo usuário carregado
+* user_name:admin
+* password: pass
+* perfil: "ADM
 
 
 ## Endpoint usados:
