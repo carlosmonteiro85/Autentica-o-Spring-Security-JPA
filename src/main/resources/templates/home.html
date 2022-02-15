@@ -1,0 +1,15 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+        <title>Spring Security Example</title>
+    </head>
+    <body>
+        <h1>Welcome!</h1>
+        <div sec:authorize="isAuthenticated()">
+	        <p>Click <a sec:authorize="isAuthenticated()" th:href="@{/hello}">here</a> to see a default.</p>        
+        </div>
+        <div sec:authorize="isAuthenticated()" >
+	        <p>Click <a sec:authorize="isAuthenticated()" th:href="@{/adm}">here</a> to see a just administrator.</p>
+        </div>
+    </body>
+</html>
