@@ -24,23 +24,22 @@ Após o projeto receber o build, é iniciado o H2, que é encontrado através do
 
 ## Endpoint usados:
 
-## Cotação
-home:  
+### home:  
 * Método get 
 * End-point: http://localhost:8080/home
 
-* End-point para administrador
+### End-point para administrador
   adm: Acassado apenas por usuários que tenhos a Role "ADM"
 * Método get 
 * End-point: http://localhost:8080/adm
 
-* End-point para aberto
+### End-point para aberto
   hello: Acassado por usuários que tenhos a Role "ADM" ou "USER"
 * Método get 
 * End-point: http://localhost:8080/hello
 
-* End-point de login
-  login: Gerenciado pela framework Spring-Security com autenticação do usuario do bd.
+### End-point de login
+* login: Gerenciado pela framework Spring-Security com autenticação do usuario do bd.
 * End-point: http://localhost:8080/login
 
 principais configurações de segurança nos end-points
