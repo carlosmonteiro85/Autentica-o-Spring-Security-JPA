@@ -42,21 +42,9 @@ Após o projeto receber o build, é iniciado o H2, que é encontrado através do
 * login: Gerenciado pela framework Spring-Security com autenticação do usuario do bd.
 * End-point: http://localhost:8080/login
 
-principais configurações de segurança nos end-points
-http.
-			httpBasic()
-        .and()
-        	.authorizeRequests()
-        	.antMatchers("/h2-console/**").permitAll() // caso use o H2 como data base.
-        	.antMatchers("/hello").hasAnyAuthority("ADM", "USER") // Permite que o usuario ADM e o User tenham acesso.
-        	.antMatchers("/adm").hasAnyAuthority("ADM")// Permite o usuário com role ADM o acesso.
-        .and()
-        	.formLogin(form -> form
-        		.loginPage("/login")// URL da pagina de login
-        		.defaultSuccessUrl("/home", true) //pagina usada para abrir ao se autenticar
-        		.permitAll() // todos são permitidos acessar a pagina de login
-            		).csrf().disable();
-		http.headers().frameOptions().disable();
+## principais configurações de segurança nos end-points
+* As Configurações de acesso e segurança nos end-poits estão na classa WebSecurityConfig
+no caminho: src/main/java/br/com/examplesecurity/security/conf/WebSecurityConfig.java
 
 ## Criptografia de senhas.
 * Foi usada a api "BCryptPasswordEncoder" do Spring security para realizar a Criptografia das senhas.
