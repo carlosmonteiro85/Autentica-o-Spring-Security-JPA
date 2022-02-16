@@ -22,7 +22,7 @@ Após o projeto receber o build, é iniciado o H2, que é encontrado através do
 * perfil: "ADM
 
 
-## Endpoint usados:
+## End-point usados:
 
 ### home:  
 * Método get 
