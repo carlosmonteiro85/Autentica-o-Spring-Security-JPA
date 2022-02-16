@@ -11,7 +11,7 @@ Após o projeto receber o build, é iniciado o H2, que é encontrado através do
 * User: sa
 * Password: vazio
 
-## Utilizadouivo data.sql para injetar dados para os testes
+## Utilizado arquivo data.sql para injetar dados para os testes
 ### sprimeiro usuário carregado 
 * user name: user
 * password: pass
